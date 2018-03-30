@@ -41,6 +41,7 @@ public class Main {
 //            count = Integer.bitCount(endingNumber);
 //            Place at the end of program each proram to avoid looping.
 //            System.out.println("There are " + count + " multiples of 7.");
+//            Declare separate multiples variable at top, create one FOR loop, and run print multiples adding the count before loop.
 
             System.out.print("Multiples of 7 are: " );
             for (int multiplesOf7 = 1; multiplesOf7 < endingNumber; multiplesOf7++) {
