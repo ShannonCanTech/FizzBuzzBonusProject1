@@ -8,8 +8,8 @@ public class Main {
 
         Boolean done = false;
         Scanner sc = new Scanner(System.in);
-//        int multiples;
-        int count;
+//      int multiples;
+//        int count;
 
         while (done != true) {
             System.out.print("Insert an ending number: ");
@@ -24,7 +24,6 @@ public class Main {
                 } else {
 
                     if (x % 3 == 0) {
-                        //multiples_of_3 = x * 3;
                         System.out.print("Fizz");
                         System.out.print("\n");
                     } else if (x % 5 == 0) {
@@ -37,8 +36,12 @@ public class Main {
                 }
             }
             System.out.print("\n");
-//            Number of multiples out of the submitted ending number.
+
+//            Number of multiples out of the submitted ending number using bitCount.
 //            count = Integer.bitCount(endingNumber);
+//            Place at the end of program each proram to avoid looping.
+//            System.out.println("There are " + count + " multiples of 7.");
+
             System.out.print("Multiples of 7 are: " );
             for (int multiplesOf7 = 1; multiplesOf7 < endingNumber; multiplesOf7++) {
                     if (multiplesOf7 % 7 == 0) {
@@ -51,7 +54,6 @@ public class Main {
             for (int multiplesOf17 = 1; multiplesOf17 < endingNumber; multiplesOf17++ ) {
 
                 if (multiplesOf17 % 17 == 0) {
-//                        System.out.print("There are " + count + " multiples of 17.");
                     System.out.print("\t" + multiplesOf17);
                 } else {
                     done = true;
@@ -60,18 +62,11 @@ public class Main {
             System.out.print("Multiples of 23 are: ");
             for (int multiplesOf23 = 1; multiplesOf23 < endingNumber; multiplesOf23++) {
                  if (multiplesOf23 % 23 == 0) {
-//                        System.out.print("There are " + count + " multiples of 23.");
                      System.out.print("\t" + multiplesOf23);
                  } else {
                      done = true;
                  }
             } System.out.print("\n");
-//            System.out.print("\n");
-//            System.out.println("There are " + count + " multiples of 7.");
-//            System.out.print("\n");
-//            System.out.println("There are " + count + " multiples of 17.");
-//            System.out.print("\n");
-//            System.out.println("There are " + count + " multiples of 23.");
         }
     }
 }
